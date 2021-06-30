@@ -2,6 +2,11 @@
 <head>
     <link rel="stylesheet" href="style/style.css">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LduCtYUAAAAAEbktZ232OEPUkG-qORNyLgdw_Dr"></script>
+    <script type="module" src="js/js.js"></script>
 </head>
 <body>
     <div class="container">

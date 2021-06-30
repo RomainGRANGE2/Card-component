@@ -5,6 +5,7 @@
     --darkblue : hsl(233, 47%, 7%);
     --DesaturedBlue : hsl(244, 38%, 16%);
     --SoftViolet : hsl(277, 64%, 61%);
+    --filter : hsl(277, 64%, 61%,0.466);
     --graymain : hsla(0, 0%, 100%, 0.466);
 }
 
@@ -20,16 +21,16 @@ body{
 
 .container{
     padding: 100px 90px;
-    @media (min-width :1100px){
+    @media (min-width :1360px){
         padding: 200px;
         display: flex;
         flex-direction: row-reverse;
     }
     .container__image{
-        // width: 100%;
-        // height: 400px;
-        // background-image: linear-gradient(rgba(181, 112, 112, 0.6), rgba(112, 122, 181, 0.6)), url(../../stats-preview-card-component-main/images/image-header-mobile.jpg);
-        @media (min-width :1100px){
+        width: auto;
+        height: auto;
+        //background: linear-gradient(hsla(277, 64%, 61%, 0.466), hsl(277, 64%, 61%,0.466));
+        @media (min-width :1360px){
             width: 50%;
             height: auto;
         }
@@ -37,29 +38,31 @@ body{
             width: 100%;
             height: auto;
             display: block;
-            @media (min-width :1100px){
+            //filter: var(--filter);
+            @media (min-width :1360px){
                 display: none;
             }
         }
         .container__image__desk{
             display: none;
-            @media (min-width :1100px){
+            @media (min-width :1360px){
                 display: block;
                 width: 100%;
-                height: auto;
+                height: 100%;
+                //filter: var(--filter);
             }
         }
     }
     .container__content{
         background-color: var(--DesaturedBlue);
         padding: 40px;
-        @media (min-width :1100px){
+        @media (min-width :1360px){
             width: 50%;
             height: auto;
         }
         .content__content{
-            @media (min-width :1100px){
-                margin:30px 90px 30px 30px;
+            @media (min-width :1360px){
+                margin:30px 50px 30px 30px;
                 display: flex;
                 flex-direction: column;
                 justify-items: center;
@@ -70,7 +73,7 @@ body{
                 margin: 0 auto;
                 text-align: center;
                 font-family: 'Inter';
-                @media (min-width :1100px){
+                @media (min-width :1360px){
                     text-align: left;
                     font-size: 40px;
                 }
@@ -85,7 +88,7 @@ body{
                 font-weight: normal;
                 color: var(--graymain);
                 line-height: 1.60;
-                @media (min-width :1100px){
+                @media (min-width :1360px){
                     text-align: left;
                     font-size: 20px;
                 }
@@ -95,14 +98,14 @@ body{
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-                @media (min-width :1100px){
+                @media (min-width :1360px){
                     flex-direction: row;
                     justify-content: space-between;
                     flex-wrap: wrap;
                 }
                 .container__content__chiffres__chiffre{
                     margin-bottom: 30px;
-                    @media (min-width :1100px){
+                    @media (min-width :1360px){
                         margin-bottom: 0px;
                     }
                     .container__content__chiffres__chiffre__span{
